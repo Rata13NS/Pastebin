@@ -10,7 +10,7 @@ function addText() {
             for (let i = 0; i < 50; ++i) {
                 savedTexts.innerHTML += textIntroduced[i];
             }
-            
+            fullText.innerHTML += textIntroduced;
             savedTexts.innerHTML += "..." + "<a href='file:///C:/Users/Calin/OneDrive/Desktop/Pastebin%20WELLCODE/text.html'>View the full text</a>";
             savedTexts.innerHTML += '<br></br>';
         } else {
