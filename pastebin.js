@@ -1,7 +1,7 @@
 let savedTexts = document.getElementById("savedTexts");
 let savedTextsString = [];
 let savedNameTextsString = [];
-let fullText = document.getElementById("fullText").textContent;
+let fullText = document.getElementById("fullText");
 
 function addText() {
     let textIntroduced = document.getElementById("input").value;
@@ -10,8 +10,7 @@ function addText() {
             for (let i = 0; i < 50; ++i) {
                 savedTexts.innerHTML += textIntroduced[i];
             }
-            var text = document.createTextNode(textIntroduced);
-            fullText.appendChild(text);
+            
             savedTexts.innerHTML += "..." + "<a href='file:///C:/Users/Calin/OneDrive/Desktop/Pastebin%20WELLCODE/text.html'>View the full text</a>";
             savedTexts.innerHTML += '<br></br>';
         } else {
